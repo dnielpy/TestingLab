@@ -4,8 +4,8 @@ class Program
 {
     static void Main(){
     //Primer Ejercicio:
-    //Dado una ecuacion de la forma a^2+bx+c calcular su discriminante:
     //Discriminante = b^2 - 4ac
+    //1-1:
     static int discriminantFunction(int a, int b, int c){
 
         int discriminat = (int) Math.Pow(b, 2) - 4 * (a*c);
