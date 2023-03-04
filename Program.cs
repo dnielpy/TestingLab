@@ -36,7 +36,7 @@ class Program
         } 
 
 
-    Console.WriteLine("Escribe 2 textos a continuación e imprimiré una cadena donde el primero sea el mayor: ");
+    Console.WriteLine("Escribe los 2 textos a continuación e imprimiré una cadena donde el primero sea el mayor: ");
     string text1 = Console.ReadLine();
     string text2 = Console.ReadLine();
 
