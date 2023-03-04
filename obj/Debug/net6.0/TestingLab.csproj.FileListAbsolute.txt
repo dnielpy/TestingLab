@@ -1,0 +1,15 @@
+E:\Codes\Escuela\CP\TestingLab\obj\Debug\net6.0\TestingLab.csproj.AssemblyReference.cache
+E:\Codes\Escuela\CP\TestingLab\obj\Debug\net6.0\TestingLab.GeneratedMSBuildEditorConfig.editorconfig
+E:\Codes\Escuela\CP\TestingLab\obj\Debug\net6.0\TestingLab.AssemblyInfoInputs.cache
+E:\Codes\Escuela\CP\TestingLab\obj\Debug\net6.0\TestingLab.AssemblyInfo.cs
+E:\Codes\Escuela\CP\TestingLab\obj\Debug\net6.0\TestingLab.csproj.CoreCompileInputs.cache
+E:\Codes\Escuela\CP\TestingLab\bin\Debug\net6.0\TestingLab.exe
+E:\Codes\Escuela\CP\TestingLab\bin\Debug\net6.0\TestingLab.deps.json
+E:\Codes\Escuela\CP\TestingLab\bin\Debug\net6.0\TestingLab.runtimeconfig.json
+E:\Codes\Escuela\CP\TestingLab\bin\Debug\net6.0\TestingLab.dll
+E:\Codes\Escuela\CP\TestingLab\bin\Debug\net6.0\TestingLab.pdb
+E:\Codes\Escuela\CP\TestingLab\obj\Debug\net6.0\TestingLab.dll
+E:\Codes\Escuela\CP\TestingLab\obj\Debug\net6.0\refint\TestingLab.dll
+E:\Codes\Escuela\CP\TestingLab\obj\Debug\net6.0\TestingLab.pdb
+E:\Codes\Escuela\CP\TestingLab\obj\Debug\net6.0\TestingLab.genruntimeconfig.cache
+E:\Codes\Escuela\CP\TestingLab\obj\Debug\net6.0\ref\TestingLab.dll
