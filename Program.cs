@@ -3,6 +3,29 @@
 class Program
 {
     static void Main(){
+    //Primer Ejercicio:
+    //Discriminante = b^2 - 4ac
+    //1-1:
+    static int discriminantFunction(int a, int b, int c){
+
+        int discriminat = (int) Math.Pow(b, 2) - 4 * (a*c);
+        
+        return discriminat;
+    }
+
+    Console.WriteLine("Escriba solo los coeficientes X, B, C de la ecuación de la forma ax^2+bx+c: ");
+    Console.WriteLine("X: ");
+    int a = int.Parse(Console.ReadLine());
+    Console.WriteLine("B: ");
+    int b = int.Parse(Console.ReadLine());
+    Console.WriteLine("C: ");
+    int c = int.Parse(Console.ReadLine());
+
+    Console.WriteLine($"El discriminante es {discriminantFunction(a, b, c)}");
+
+
+    //Segundo Ejercicio:
+        /*
         static void devuelveTexto(string a, string b){
             // Este contador es para definir que valores tomarán las variables ext1 y ext2 
             bool contador = false;
@@ -41,5 +64,7 @@ class Program
     string text2 = Console.ReadLine();
 
     devuelveTexto(text1, text2);
+    */
+    
     }
 }
