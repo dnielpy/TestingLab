@@ -4,22 +4,26 @@ using System.Diagnostics;
 class Program
 {
     static void Main(){
-        // Implemente una funcion que cuando se invoque, espere una entrada´ de texto y devuelva la velocidad de escritura del usuario.
-        static double writeSpeed(){
-            Stopwatch crono = new Stopwatch();
-            Console.WriteLine("Escribe un texto: ");
-
-            crono.Start();
-            string texto = Console.ReadLine();
-            crono.Stop();
-
-            double ms = (double) crono.ElapsedMilliseconds;
-
-            return ms;
+        static void biciesto(int x){
+            if (x % 4 == 0 && x % 100 != 0)
+            {
+                Console.WriteLine("El año es biciesto");
+                Environment.Exit(0);
+            }
+            if (x % 4 == 0 && x % 100 == 0 && x % 400 == 0)
+            {
+                Console.WriteLine("El año es biciesto");
+                Environment.Exit(0);    //Para finalizar el programa
+            }
+            else
+            {    
+                Console.WriteLine("El año no es biciesto");
+            }
         }
-
-        Console.WriteLine($"Te has demorado: {writeSpeed()} ms");
-
+        System.Console.WriteLine("Escriba el año: ");
+        int year = int.Parse(Console.ReadLine());
+        biciesto(year);
+        
     
     }
 }
