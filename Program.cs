@@ -4,23 +4,27 @@ using System.Diagnostics;
 class Program
 {
     static void Main(){
-        // Implemente una funcion que reciba tres n´ umeros enteros y retorne´ true o false en dependencia de si forman o no una fecha.
-        
-        static bool fechaTester(int x, int y, int z) {
-            if (x > 0 && x < 31 && y > 0 && y < 12 && z > 0 && z < 3000)
-            {
-                return true;
-            }
-            return false;
-        }
-        System.Console.WriteLine("Escribe el day: ");
-        int day = int.Parse(Console.ReadLine());
-        System.Console.WriteLine("Escribe el month: ");
-        int month = int.Parse(Console.ReadLine());
-        System.Console.WriteLine("Escribe el year: ");
-        int year = int.Parse(Console.ReadLine());
 
-        System.Console.WriteLine(fechaTester(day, month, year));
-    
+        static void Write(string texto){
+            Console.WriteLine(texto);
+        };
+        
+        static void timeOfFlight(int hora1, int minutos1, int hora2, int minutos2){
+            //Hora = hora1 : minutos1
+            int hora = hora2 - hora1;               //Mal
+            int minutos = minutos2 - minutos1;      //Mal
+
+            System.Console.WriteLine($"{hora}:{minutos}");
+        }
+        Write("Escribe la hora A: ");
+        int hora = int.Parse(Console.ReadLine());
+        Write("Escribe los minutos A: ");
+        int mina = int.Parse(Console.ReadLine());
+        Write("Escribe la hora B: ");
+        int horb = int.Parse(Console.ReadLine());
+        Write("Escribe los minutos B: ");
+        int minb = int.Parse(Console.ReadLine());
+
+        timeOfFlight(hora, mina, horb, minb);
     }
 }
