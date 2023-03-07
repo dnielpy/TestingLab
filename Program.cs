@@ -4,23 +4,48 @@ using System.Diagnostics;
 class Program
 {
     static void Main(){
-        // Implemente una funcion que reciba tres n´ umeros enteros y retorne´ true o false en dependencia de si forman o no una fecha.
-        
-        static bool fechaTester(int x, int y, int z) {
-            if (x > 0 && x < 31 && y > 0 && y < 12 && z > 0 && z < 3000)
-            {
-                return true;
-            }
-            return false;
-        }
-        System.Console.WriteLine("Escribe el day: ");
-        int day = int.Parse(Console.ReadLine());
-        System.Console.WriteLine("Escribe el month: ");
-        int month = int.Parse(Console.ReadLine());
-        System.Console.WriteLine("Escribe el year: ");
-        int year = int.Parse(Console.ReadLine());
 
-        System.Console.WriteLine(fechaTester(day, month, year));
-    
+        int agrego = 0;
+
+        static void Write(string texto){
+            Console.WriteLine(texto);
+        };
+
+//Minutes Of Flight
+        static int minutesOfFlight(int MinA, int MinB){          
+            int minutes = (60 - MinA) + MinB;
+            return minutes;
+        }
+
+//Hours Of Flights
+        static int hoursOfFlights(int HourA, int HourB, int agrego){
+            int hour = Math.Max(HourA, HourB) - Math.Min(HourA, HourB) + agrego;
+            return hour;
+        }
+
+//Time Of Flight
+        static string timeOfFlight(int horas, int minutos){
+            if (minutos > 60)
+            {
+                minutos = 60 - minutos;
+            }
+            string time = $"{horas}:{minutos}";
+            return time;
+        }
+
+        Write("Escribe la hora A: ");
+        int hora = int.Parse(Console.ReadLine());
+        Write("Escribe los minutos A: ");
+        int mina = int.Parse(Console.ReadLine());
+        Write("Escribe la hora B: ");
+        int horb = int.Parse(Console.ReadLine());
+        Write("Escribe los minutos B: ");
+        int minb = int.Parse(Console.ReadLine());
+
+        if (minutesOfFlight(mina, minb) > 60){
+            agrego++;
+        }
+
+        Console.WriteLine(timeOfFlight(hoursOfFlights(hora, horb, agrego), minutesOfFlight(mina, minb)));
     }
 }
