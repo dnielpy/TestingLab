@@ -25,10 +25,10 @@ class Program
 
 //Time Of Flight
         static string timeOfFlight(int horas, int minutos){
-            if (minutos > 60)
+            if (minutos == 60)
             {
                 minutos = 60 - minutos;
-            }
+            } 
             string time = $"{horas}:{minutos}";
             return time;
         }
