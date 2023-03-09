@@ -1,54 +1,33 @@
 ﻿using System;
-using System.Diagnostics;
 
 class Program
 {
     static void Main(){
+        static void arrayInverso(){
+        System.Console.WriteLine("Escribe la cantidad de valores que tendrá el array: \n");
+        int tamaño = int.Parse(Console.ReadLine());
+        int[] miArray = new int[tamaño];
+        int[] arrayInverso = new int[tamaño];
+        int[] arrayInversoFinal = new int[tamaño]; 
 
-        int agrego = 0;
-
-        static void Write(string texto){
-            Console.WriteLine(texto);
-        };
-
-//Minutes Of Flight
-        static int minutesOfFlight(int MinA, int MinB){          
-            int minutes = (60 - MinA) + MinB;
-            return minutes;
+        System.Console.WriteLine("\nAgrege los valores a continuacion: \n");
+        for (int i = 0; i < miArray.Length; i++)
+        {
+            System.Console.WriteLine($"Valor {i} = ");
+            int valores = int.Parse(Console.ReadLine());
+            miArray[i] = valores;
         }
-
-//Hours Of Flights
-        static int hoursOfFlights(int HourA, int HourB, int agrego){
-            int hour = Math.Max(HourA, HourB) - Math.Min(HourA, HourB) + agrego;
-            return hour;
-        }
-
-//Time Of Flight
-        static string timeOfFlight(int horas, int minutos){
-            if (minutos == 60)
+        int contador = 0;
+        for (int j = 0; j < miArray.Length; j++)
             {
-                minutos = 60 - minutos;
-            } 
-            if (horas == 0){
-                horas = 23;
+                contador++;
+                arrayInverso[j] = miArray[tamaño - contador];
+                arrayInversoFinal[j] = tamaño-contador;
+               // Console.WriteLine($"Valor del array Inverso en la posicion {j}: {arrayInverso[j]}");
             }
-            string time = $"{horas}:{minutos}";
-            return time;
+            string miArrayString = string.Join(", ", arrayInverso);
+            System.Console.WriteLine(miArrayString);
         }
-
-        Write("Escribe la hora A: ");
-        int hora = int.Parse(Console.ReadLine());
-        Write("Escribe los minutos A: ");
-        int mina = int.Parse(Console.ReadLine());
-        Write("Escribe la hora B: ");
-        int horb = int.Parse(Console.ReadLine());
-        Write("Escribe los minutos B: ");
-        int minb = int.Parse(Console.ReadLine());
-
-        if (minutesOfFlight(mina, minb) > 60){
-            agrego++;
-        }
-
-        Console.WriteLine(timeOfFlight(hoursOfFlights(hora, horb, agrego), minutesOfFlight(mina, minb)));
+        arrayInverso();
     }
 }
