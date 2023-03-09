@@ -29,6 +29,9 @@ class Program
             {
                 minutos = 60 - minutos;
             } 
+            if (horas == 0){
+                horas = 23;
+            }
             string time = $"{horas}:{minutos}";
             return time;
         }
