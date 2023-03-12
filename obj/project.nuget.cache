@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IRp1EtAPFZ/5bCfPCxB+gLYCUjEP0dOQTWDx/moZ+Y8Nyid5wHchiY1+/aaXPbO52GtC9dT6P8pjWO1hVYsB0w==",
+  "dgSpecHash": "oRnqL4JkjIlyGNhowWCElnxvTIf5jR6pYTgBTXgJPxWbS2KwC4rc6bZREmW0SasLwg9iZk/utSdmdhTTbgdDiQ==",
   "success": true,
-  "projectFilePath": "E:\\Codes\\Escuela\\CP\\TestingLab\\TestingLab.csproj",
+  "projectFilePath": "/home/dnielpy/Documentos/Code/Trainning/TestingLab/TestingLab.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
