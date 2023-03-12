@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Codes\\Escuela\\CP\\TestingLab\\TestingLab.csproj": {}
+    "/home/dnielpy/Documentos/Code/Trainning/TestingLab/TestingLab.csproj": {}
   },
   "projects": {
-    "E:\\Codes\\Escuela\\CP\\TestingLab\\TestingLab.csproj": {
+    "/home/dnielpy/Documentos/Code/Trainning/TestingLab/TestingLab.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Codes\\Escuela\\CP\\TestingLab\\TestingLab.csproj",
+        "projectUniqueName": "/home/dnielpy/Documentos/Code/Trainning/TestingLab/TestingLab.csproj",
         "projectName": "TestingLab",
-        "projectPath": "E:\\Codes\\Escuela\\CP\\TestingLab\\TestingLab.csproj",
-        "packagesPath": "C:\\Users\\Dnielpy\\.nuget\\packages\\",
-        "outputPath": "E:\\Codes\\Escuela\\CP\\TestingLab\\obj\\",
+        "projectPath": "/home/dnielpy/Documentos/Code/Trainning/TestingLab/TestingLab.csproj",
+        "packagesPath": "/home/dnielpy/.nuget/packages/",
+        "outputPath": "/home/dnielpy/Documentos/Code/Trainning/TestingLab/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Dnielpy\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/dnielpy/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -49,8 +43,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -59,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.113/RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,5 +1,4 @@
 ﻿using System;
-
 class Program
 {
     static void Main(){
@@ -18,7 +17,7 @@ class Program
             miArray[i] = valores;
         }
         int contador = 0;
-        for (int j = 0; j < miArray.Length; j++)
+        for (int j = 0; j < miArray.Length; j++)haber
             {
                 contador++;
                 arrayInverso[j] = miArray[tamaño - contador];
